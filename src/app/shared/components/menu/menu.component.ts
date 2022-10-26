@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuTypeEnum } from '../../emuns/menu-type.enum';
+import { LancamentosService } from '../../services/lancamentos.service';
 import { MenuService } from '../../services/menu.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class MenuComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private menuService: MenuService
+    private menuService: MenuService,
+    private lancamentosService: LancamentosService
   ) { }
 
   get estouDashboard(): boolean {
@@ -43,6 +45,9 @@ export class MenuComponent implements OnInit {
   }
 
   onNavigate(rota: string): void {
+    if (rota.includes('lancamentos')) {
+      this.lancamentosService.modoEdicao = false;
+    }
     this.router.navigate([rota]);
   }
 

@@ -1,6 +1,7 @@
-import { DinheiroDirective } from './apenas-numeros.directive';
+import { DinheiroDirective } from "./dinheiro.directive";
 
-describe('ApenasNumerosDirective', () => {
+
+describe('DinheiroDirective', () => {
   it('should create an instance', () => {
     const directive = new DinheiroDirective();
     expect(directive).toBeTruthy();

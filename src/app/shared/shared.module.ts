@@ -9,7 +9,7 @@ import { UsuarioService } from './services/usuario.service';
 import { MenuService } from './services/menu.service';
 import { AutenticadorGuard } from './seguranca/autenticador.guard';
 import { LogoutComponent } from './components/logout/logout.component';
-import { DinheiroDirective } from './directives/apenas-numeros.directive';
+import { DinheiroDirective } from './directives/dinheiro.directive';
 import { MaiusculoDirective } from './directives/maiusculo.directive';
 
 

@@ -10,6 +10,6 @@ export class AppSettings {
   }
 
   public static get API_USUARIO(): string {
-    return '/api/autenticador';
+    return '/api/usuario';
   }
 }
